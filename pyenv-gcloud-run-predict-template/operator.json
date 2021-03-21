@@ -1,0 +1,8 @@
+{
+    "config": {
+        "runtime": "python37",
+        "cloud_provider": "gcloud",
+        "deployment_type": "run",
+        "entry_function": "main"
+    }
+}
