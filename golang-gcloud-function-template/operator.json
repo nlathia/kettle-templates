@@ -1,0 +1,15 @@
+{
+    "config": {
+        "runtime": "go113",
+        "cloud_provider": "gcloud",
+        "deployment_type": "function",
+        "entry_function": "main"
+    },
+    "template": [
+	{
+		"prompt": "Entry function name",
+		"type": "string",
+		"key": "FunctionName"
+	}
+    ]
+}
