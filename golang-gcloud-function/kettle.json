@@ -10,7 +10,7 @@
 		"prompt": "Entry function name",
 		"type": "string",
 		"key": "FunctionName",
-		"format": "camel",
+		"format": "camel"
 	}
     ]
 }
