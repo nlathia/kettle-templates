@@ -5,7 +5,7 @@ from src.model.model import predict, load_model
 model = load_model()
 
 
-def {{.FunctionName}}(request):
+def main(request):
     """Responds to any HTTP request.
     Args:
         request (flask.Request): HTTP request object.
