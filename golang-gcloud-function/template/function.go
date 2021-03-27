@@ -26,8 +26,8 @@ func validateRequest(req functionRequest) error {
 	return nil
 }
 
-// {{.FunctionName}} add docstring here
-func {{.FunctionName}}(w http.ResponseWriter, r *http.Request) {
+// Main is the entry for this Cloud Function
+func Main(w http.ResponseWriter, r *http.Request) {
 	// Read and validate the request
 	var req functionRequest
 	if err := json.NewDecoder(r.Body).Decode(&req); err != nil {
