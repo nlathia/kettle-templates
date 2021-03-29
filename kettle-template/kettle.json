@@ -1,0 +1,8 @@
+{
+    "config": {
+        "runtime": "none",
+        "cloud_provider": "none",
+        "deployment_type": "none",
+        "entry_function": "none"
+    }
+}
