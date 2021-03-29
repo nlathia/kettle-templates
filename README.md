@@ -7,12 +7,12 @@ This repository contains machine learning pipeline and microservice templates th
 1. Install the [kettle CLI](https://github.com/operatorai/kettle-cli);
 2. Use `kettle create <template-name>` where the template name is in the first column below 👇
 
-
 ## AWS Lambda
 
 | kettle create      | Description |
 | ----------- | ----------- |
 | pyenv-aws-lambda      | Create a Python AWS Lambda function and set it up locally with [pyenv](https://github.com/pyenv/pyenv) and [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)      |
+| conda-aws-lambda      | Create a Python AWS Lambda function and set it up locally with [conda](https://docs.conda.io/en/latest/)      |
 | golang-aws-lambda   | A Go template for basic AWS Lambda function        |
 
 ## Google Cloud Functions
