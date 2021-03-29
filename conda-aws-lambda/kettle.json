@@ -1,0 +1,8 @@
+{
+  "config": {
+    "runtime": "python3.7",
+    "cloud_provider": "aws",
+    "deployment_type": "lambda",
+    "entry_function": "main"
+  }
+}
