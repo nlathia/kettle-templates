@@ -1,3 +1,3 @@
-# {{ .Name }}
+# {{ .ProjectName }}
 
-Add a description of your Lambda function!
+This Lambda function was created with the [kettle-cli](https://github.com/operatorai/kettle-cli).
