@@ -1,6 +1,7 @@
 {
   "config": {
     "runtime": "python3.7",
+    "python_manager": "conda",
     "cloud_provider": "aws",
     "deployment_type": "lambda",
     "entry_function": "main"
