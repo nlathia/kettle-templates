@@ -6,9 +6,13 @@
 set -e
 
 source $(dirname $0)/_config.sh
-conda create -y $1 python=$PYTHON_VERSION
-conda install --force-reinstall -y --name $1 -c conda-forge --file requirements.txt
-conda install --force-reinstall -y --name $1 -c conda-forge --file requirements-dev.txt
+conda create -y -n $1 python=$PYTHON_VERSION
+
 conda activate $1
 
-echo "\n ✅  Done: $1 activated."
+pip install -r requirements.txt
+pip install -r requirements-dev.txt
+
+echo "\n ✅  Done"
+
+echo "\n 🚀  Activate with: conda activate $1"
