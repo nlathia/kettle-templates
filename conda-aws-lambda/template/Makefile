@@ -1,6 +1,9 @@
 VIRTUALENV_NAME=aws-lambda.$(shell pwd | rev | cut -d '/' -f 1 | rev)
 
-.PHONY: install uninstall test clean invoke-local invoke
+.PHONY: install uninstall test clean invoke-local invoke activate
+
+activate:
+	@echo "\n➡️  Use: conda activate $(VIRTUALENV_NAME)"
 
 clean:
 	@./bin/cleanup.sh
