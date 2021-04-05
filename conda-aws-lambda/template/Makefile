@@ -1,4 +1,4 @@
-VIRTUALENV_NAME=aws-lambda.$(shell pwd | rev | cut -d '/' -f 1 | rev)
+VIRTUALENV_NAME=aws-lambda.{{ .ProjectName }}
 
 .PHONY: install uninstall test clean invoke-local invoke activate
 
