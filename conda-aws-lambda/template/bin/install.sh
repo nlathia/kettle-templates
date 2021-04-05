@@ -6,12 +6,7 @@
 set -e
 
 source $(dirname $0)/_config.sh
-conda create -y -n $1 python=$PYTHON_VERSION
-
-conda activate $1
-
-pip install -r requirements.txt
-pip install -r requirements-dev.txt
+conda env create -f environment.yml
 
 echo "\n ✅  Done"
 

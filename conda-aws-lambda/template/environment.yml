@@ -1,0 +1,8 @@
+name: aws-lambda.{{ .ProjectName }}
+dependencies:
+  - python=3.7
+  - pip
+  - pip:
+    - awslambdaric
+    - pytest==6.1.1
+    - python-lambda-local==0.1.12
