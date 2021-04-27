@@ -7,7 +7,7 @@ import (
 type RequestEvent struct{}
 
 type ResponseEvent struct {
-	Message string `json:"message:"`
+	Message string `json:"message"`
 }
 
 func init() {}
