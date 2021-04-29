@@ -1,6 +1,6 @@
 {
     "config": {
-        "runtime": "python3.7",
+        "runtime": "go1.13",
         "cloud_provider": "aws",
         "deployment_type": "lambda",
         "entry_function": "main"
