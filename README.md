@@ -13,7 +13,9 @@ This repository contains machine learning pipeline and microservice templates th
 | ----------- | ----------- |
 | pyenv-aws-lambda      | Create a Python AWS Lambda function and set it up locally with [pyenv](https://github.com/pyenv/pyenv) and [pyenv-virtualenv](https://github.com/pyenv/pyenv-virtualenv)      |
 | conda-aws-lambda      | Create a Python AWS Lambda function and set it up locally with [conda](https://docs.conda.io/en/latest/)      |
-| golang-aws-lambda   | A Go template for basic AWS Lambda function        |
+| golang-aws-lambda   | A Go template for a basic AWS Lambda function        |
+| golang-aws-lambda-dynamo-s3   | A Go template for a AWS Lambda function that includes initialising code for Dynamo DB and s3.        |
+
 
 ## Google Cloud Functions
 
