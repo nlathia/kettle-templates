@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/aws/aws-lambda-go/lambda"
 	"github.com/operatorai/wearedev/{{ .ProjectName }}/dao"
 	"github.com/operatorai/wearedev/{{ .ProjectName }}/storage"
