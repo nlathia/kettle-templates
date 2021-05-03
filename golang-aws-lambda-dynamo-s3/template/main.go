@@ -14,7 +14,7 @@ func init() {
 }
 
 func LambdaHandler(req domain.RequestEvent) (domain.ResponseEvent, error) {
-	if err := domain.ValidateRequest(event); err != nil {
+	if err := domain.ValidateRequest(req); err != nil {
 		return domain.ResponseEvent{}, err
 	}
 	if err := dao.InitSession(); err != nil {
