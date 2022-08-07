@@ -4,9 +4,6 @@ import (
 	"fmt"
 
 	"github.com/aws/aws-lambda-go/lambda"
-	"github.com/operatorai/wearedev/{{ .ProjectName }}/dao"
-	"github.com/operatorai/wearedev/{{ .ProjectName }}/storage"
-	"github.com/operatorai/wearedev/{{ .ProjectName }}/domain"
 )
 
 func init() {
@@ -20,12 +17,12 @@ func LambdaHandler(req domain.RequestEvent) (domain.ResponseEvent, error) {
 		return domain.ResponseEvent{}, err
 	}
 	if err := dao.InitSession(); err != nil {
-		return domain.ResponseEvent{}, err 
+		return domain.ResponseEvent{}, err
 	}
 	if err := storage.InitSession(); err != nil {
 		return domain.ResponseEvent{}, err
 	}
-	
+
 	return domain.ResponseEvent{
 		Message: fmt.Sprintf("Hello, %s", req.UserName),
 	}, nil

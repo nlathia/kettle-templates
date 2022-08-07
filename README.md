@@ -1,10 +1,10 @@
 # kettle-templates
 
-This repository contains machine learning pipeline and microservice templates that you can use to bootstrap your projects, with the [kettle CLI](https://github.com/operatorai/kettle-cli).
+This repository contains machine learning pipeline and microservice templates that you can use to bootstrap your projects, with the [kettle CLI](https://github.com/nlathia/kettle-cli).
 
 ## How to use a template
 
-1. Install the [kettle CLI](https://github.com/operatorai/kettle-cli);
+1. Install the [kettle CLI](https://github.com/nlathia/kettle-cli);
 2. Use `kettle create <template-name>` where the template name is in the first column below 👇
 
 ## AWS Lambda
