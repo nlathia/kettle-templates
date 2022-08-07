@@ -4,5 +4,5 @@
         "cloud_provider": "gcloud",
         "deployment_type": "function",
         "entry_function": "Main"
-    },
+    }
 }
