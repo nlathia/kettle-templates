@@ -3,7 +3,7 @@ import sys
 
 
 def get_logger():
-    log = logging.getLogger(name="openai-transcribe")
+    log = logging.getLogger(name="{{ .ProjectName }}")
     formatter = logging.Formatter("%(asctime)s - %(message)s")
     handler = logging.StreamHandler(sys.stderr)
     handler.setFormatter(formatter)
