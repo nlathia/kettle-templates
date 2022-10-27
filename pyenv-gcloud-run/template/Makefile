@@ -1,5 +1,6 @@
-VIRTUALENV_NAME=gcloud-run.$(shell pwd | rev | cut -d '/' -f 1 | rev)
-IMAGE_URL=gcr.io/{{ .ProjectID }}/{{ .ProjectName }}:latest
+PROJECT_NAME=$(shell pwd | rev | cut -d '/' -f 1 | rev)
+VIRTUALENV_NAME="gcloud-run.${PROJECT_NAME}"
+IMAGE_URL=gcr.io/kettle-projects/${PROJECT_NAME}:latest
 
 .PHONY: install uninstall test clean docker localhost
 
