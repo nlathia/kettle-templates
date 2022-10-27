@@ -3,7 +3,10 @@ IMAGE_URL=gcr.io/{{ .ProjectID }}/{{ .FunctionName }}:latest
 
 .PHONY: install uninstall test clean docker localhost
 
-uninstall:
+clean:
+	@./bin/cleanup.sh
+
+uninstall: clean
 	@./bin/remove_pyenv.sh
 
 install: uninstall
@@ -12,10 +15,7 @@ install: uninstall
 test:
 	@pytest
 
-clean:
-	@./bin/cleanup.sh
-
-docker:
+docker: clean
 	docker build -f Dockerfile -t $(IMAGE_URL) .
 
 localhost: docker
